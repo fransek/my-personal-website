@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 export interface IComponentWrapperProps {
-  children: React.ReactNode
+  children?: React.ReactNode
   className?: string
   id?: string
   innerRef?: React.RefObject<HTMLDivElement>

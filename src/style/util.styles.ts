@@ -1,3 +1,5 @@
+import { css } from 'styled-components'
+
 export const media = {
   mobile_s: '320px',
   mobile_m: '375px',
@@ -7,3 +9,8 @@ export const media = {
   laptop_l: '1440px',
   four_k: '2560px',
 }
+
+export const flexRow = css`
+  display: flex;
+  flex-direction: row;
+`

@@ -1,7 +1,8 @@
 import * as React from 'react'
 
+import { _Section, _Section_Title } from './Section.styles'
+
 import { IComponentWrapperProps } from 'components/ComponentWrapper/ComponentWrapper'
-import { _Section } from './Section.styles'
 
 interface ISectionProps extends IComponentWrapperProps {
   title: string
@@ -17,7 +18,7 @@ export const Section = ({
 }: ISectionProps) => {
   return (
     <_Section className={className} id={id} innerRef={innerRef}>
-      <h1>{title}</h1>
+      <_Section_Title>{title}</_Section_Title>
       {children}
     </_Section>
   )

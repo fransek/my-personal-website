@@ -1,14 +1,19 @@
 import * as React from 'react'
 
+import { _Nav, _Nav_Link } from './Nav.styles'
+
 import { IComponentWrapperProps } from '../ComponentWrapper/ComponentWrapper'
-import { _Nav } from './Nav.styles'
 
-interface INavProps extends IComponentWrapperProps {}
+interface INavProps extends IComponentWrapperProps {
+  links: { title: string }[]
+}
 
-export const Nav = ({ className, id, innerRef }: INavProps) => {
+export const Nav = ({ className, id, innerRef, links }: INavProps) => {
   return (
     <_Nav className={className} id={id} innerRef={innerRef}>
-      Nav
+      {links.map((link) => (
+        <_Nav_Link>{link.title}</_Nav_Link>
+      ))}
     </_Nav>
   )
 }
