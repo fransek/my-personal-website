@@ -4,5 +4,14 @@ import styled from 'styled-components'
 
 export const _Nav = styled(ComponentWrapper)`
   ${flexRow}
+  position: fixed;
+  right: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
 `
-export const _Nav_Link = styled.a``
+
+export const _Nav_Link = styled.a`
+  margin: 0 1rem;
+`

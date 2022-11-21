@@ -1,8 +1,11 @@
 import { Theme } from './theme.styles'
 import { createGlobalStyle } from 'styled-components'
-import { theme } from 'style/theme.styles'
 
 export const GlobalStyle = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+  }
+  
   body {
       min-height: 100vh;
       background-image: linear-gradient(to bottom right, ${(props: Theme) =>
