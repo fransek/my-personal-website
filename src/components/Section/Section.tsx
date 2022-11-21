@@ -2,9 +2,9 @@ import * as React from 'react'
 
 import { _Section, _Section_Title } from './Section.styles'
 
-import { IComponentWrapperProps } from 'components/ComponentWrapper/ComponentWrapper'
+import { IComponentProps } from 'components/component'
 
-interface ISectionProps extends IComponentWrapperProps {
+interface ISectionProps extends IComponentProps {
   title: string
   children: React.ReactNode
 }

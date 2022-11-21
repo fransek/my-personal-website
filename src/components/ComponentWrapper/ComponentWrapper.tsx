@@ -1,10 +1,9 @@
 import * as React from 'react'
 
-export interface IComponentWrapperProps {
-  children?: React.ReactNode
-  className?: string
-  id?: string
-  innerRef?: React.RefObject<HTMLDivElement>
+import { IComponentProps } from 'components/component'
+
+export interface IComponentWrapperProps extends IComponentProps {
+  children: React.ReactNode
 }
 
 export const ComponentWrapper = ({

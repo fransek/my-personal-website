@@ -1,9 +1,9 @@
 import * as React from 'react'
 
-import { IComponentWrapperProps } from '../ComponentWrapper/ComponentWrapper'
+import { IComponentProps } from 'components/component'
 import { _Subsection } from './Subsection.styles'
 
-interface ISubsectionProps extends IComponentWrapperProps {}
+interface ISubsectionProps extends IComponentProps {}
 
 export const Subsection = ({ className, id, innerRef }: ISubsectionProps) => {
   return (

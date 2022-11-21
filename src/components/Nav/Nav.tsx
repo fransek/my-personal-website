@@ -2,9 +2,9 @@ import * as React from 'react'
 
 import { _Nav, _Nav_Link } from './Nav.styles'
 
-import { IComponentWrapperProps } from '../ComponentWrapper/ComponentWrapper'
+import { IComponentProps } from 'components/component'
 
-interface INavProps extends IComponentWrapperProps {
+interface INavProps extends IComponentProps {
   links: { title: string }[]
 }
 
