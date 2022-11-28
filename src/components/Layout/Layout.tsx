@@ -13,15 +13,6 @@ export default function Layout({ children }: ILayoutProps) {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Nav
-        links={[
-          { title: 'About me' },
-          { title: 'Work' },
-          { title: 'Education' },
-          { title: 'Projects' },
-          { title: 'Contact' },
-        ]}
-      />
       <_Content>{children}</_Content>
     </ThemeProvider>
   )

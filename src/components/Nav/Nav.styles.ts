@@ -11,7 +11,3 @@ export const _Nav = styled(ComponentWrapper)`
   align-items: center;
   height: 3rem;
 `
-
-export const _Nav_Link = styled.a`
-  margin: 0 1rem;
-`

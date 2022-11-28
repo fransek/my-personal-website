@@ -2,37 +2,38 @@ import * as React from 'react'
 
 import type { HeadFC, PageProps } from 'gatsby'
 
+import { AboutMe } from 'components/sections/AboutMe/AboutMe'
+import { Contact } from 'components/sections/Contact/Contact'
+import { Education } from 'components/sections/Education/Education'
 import Layout from 'components/Layout/Layout'
-import { Section } from 'components/Section/Section'
+import { Nav } from 'components/Nav/Nav'
+import { Projects } from 'components/sections/Projects/Projects'
+import { Work } from 'components/sections/Work/Work'
+import { useRef } from 'react'
 
 const IndexPage: React.FC<PageProps> = () => {
-  const section = (
-    <Section title='Section'>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque,
-        consequuntur a illum corporis ipsum tenetur sed nulla quasi nam dolorem
-        magnam repudiandae vero id inventore, eaque error in laboriosam commodi
-        sit voluptatem sint officiis corrupti modi. Eum veniam exercitationem
-        laudantium neque quos quis magnam distinctio consequuntur libero,
-        similique delectus dignissimos obcaecati sequi laborum quasi eaque error
-        autem aliquid aspernatur tempore. Repudiandae molestiae, explicabo rem
-        maxime facilis assumenda exercitationem aperiam incidunt soluta eum eos
-        dignissimos laboriosam, sint nostrum eaque numquam possimus maiores.
-        Amet nam sed, quod ullam alias veritatis mollitia reiciendis delectus ea
-        cumque vel, ad maiores autem iure nisi illo.
-      </p>
-    </Section>
-  )
+  const aboutMeRef = useRef<HTMLDivElement>(null)
+  const workRef = useRef<HTMLDivElement>(null)
+  const educationRef = useRef<HTMLDivElement>(null)
+  const projectsRef = useRef<HTMLDivElement>(null)
+  const contactRef = useRef<HTMLDivElement>(null)
+
   return (
     <Layout>
-      {section}
-      {section}
-      {section}
-      {section}
-      {section}
-      {section}
-      {section}
-      {section}
+      <Nav
+        links={[
+          { title: 'About me', sectionRef: aboutMeRef },
+          { title: 'Work', sectionRef: workRef },
+          { title: 'Education', sectionRef: educationRef },
+          { title: 'Projects', sectionRef: projectsRef },
+          { title: 'Contact', sectionRef: contactRef },
+        ]}
+      />
+      <AboutMe innerRef={aboutMeRef} />
+      <Work innerRef={workRef} />
+      <Education innerRef={educationRef} />
+      <Projects innerRef={projectsRef} />
+      <Contact innerRef={contactRef} />
     </Layout>
   )
 }
