@@ -5,6 +5,7 @@ import type { HeadFC, PageProps } from 'gatsby'
 import { AboutMe } from 'components/sections/AboutMe/AboutMe'
 import { Contact } from 'components/sections/Contact/Contact'
 import { Education } from 'components/sections/Education/Education'
+import { Footer } from 'components/Footer/Footer'
 import Layout from 'components/Layout/Layout'
 import { Nav } from 'components/Nav/Nav'
 import { Projects } from 'components/sections/Projects/Projects'
@@ -34,6 +35,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Education innerRef={educationRef} />
       <Projects innerRef={projectsRef} />
       <Contact innerRef={contactRef} />
+      <Footer />
     </Layout>
   )
 }
