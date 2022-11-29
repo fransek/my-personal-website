@@ -38,6 +38,7 @@ export const NavLink = ({
     }
 
     const updateActiveState = () => {
+      console.log(window.scrollY)
       if (isInView()) {
         setActive(true)
       } else {
@@ -54,8 +55,19 @@ export const NavLink = ({
   }, [elementHeight, elementY])
 
   useEffect(() => {
-    setElementY(sectionRef.current?.getBoundingClientRect().y)
-    setElementHeight(sectionRef.current?.getBoundingClientRect().height)
+    const updateElementState = () => {
+      setElementY(sectionRef.current?.offsetTop)
+      setElementHeight(sectionRef.current?.clientHeight)
+      console.log('ElementY: ' + elementY)
+      console.log('ElementHeight: ' + elementHeight)
+    }
+
+    window.addEventListener('resize', updateElementState)
+    updateElementState()
+
+    return () => {
+      window.removeEventListener('resize', updateElementState)
+    }
   }, [sectionRef])
 
   return (

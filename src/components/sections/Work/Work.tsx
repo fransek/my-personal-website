@@ -7,7 +7,7 @@ interface IWorkProps extends IComponentProps {}
 
 export const Work = ({ className, id, innerRef }: IWorkProps) => {
   return (
-    <Section title='About me' className={className} id={id} innerRef={innerRef}>
+    <Section title='Work' className={className} id={id} innerRef={innerRef}>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ducimus
       in alias labore quod a excepturi dolorum accusantium eius soluta
       reiciendis ut quisquam, vitae incidunt, fugiat sed repudiandae expedita
