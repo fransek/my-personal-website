@@ -14,6 +14,6 @@ export const GlobalStyle = createGlobalStyle`
       color: white;
       margin: 0;
       padding: 0;
-      font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Anek Devanagari", sans-serif;
   }
 `

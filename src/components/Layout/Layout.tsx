@@ -1,5 +1,6 @@
+import '@fontsource/anek-devanagari/300.css'
+
 import { GlobalStyle } from 'style/global.styles'
-import { Nav } from 'components/Nav/Nav'
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import { _Content } from './Layout.styles'
