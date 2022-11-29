@@ -38,7 +38,6 @@ export const NavLink = ({
     }
 
     const updateActiveState = () => {
-      console.log(window.scrollY)
       if (isInView()) {
         setActive(true)
       } else {
@@ -58,8 +57,6 @@ export const NavLink = ({
     const updateElementState = () => {
       setElementY(sectionRef.current?.offsetTop)
       setElementHeight(sectionRef.current?.clientHeight)
-      console.log('ElementY: ' + elementY)
-      console.log('ElementHeight: ' + elementHeight)
     }
 
     window.addEventListener('resize', updateElementState)

@@ -10,4 +10,6 @@ export const _Nav = styled(ComponentWrapper)`
   justify-content: center;
   align-items: center;
   height: 3rem;
+  background-color: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
 `

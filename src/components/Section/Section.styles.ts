@@ -7,4 +7,4 @@ export const _Section = styled(ComponentWrapper)`
   min-height: 100vh;
 `
 
-export const _Section_Title = styled.h1``
+export const _Section_Title = styled.h2``
