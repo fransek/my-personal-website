@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
   
   body {
       min-height: 100vh;
-      background-image: linear-gradient(to bottom right, ${(props: Theme) =>
+      background-image: linear-gradient(to right, ${(props: Theme) =>
         props.theme.bg.gradient_1}, ${(props: Theme) =>
   props.theme.bg.gradient_2});
       color: white;
