@@ -6,4 +6,5 @@ import styled from 'styled-components'
 export const _Nav = styled(ComponentWrapper)`
   ${flexRow}
   ${fixedField}
+  z-index: 1000;
 `

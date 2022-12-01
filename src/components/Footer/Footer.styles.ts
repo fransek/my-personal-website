@@ -6,5 +6,6 @@ import styled from 'styled-components'
 export const _Footer = styled(ComponentWrapper)`
   ${flexRow}
   ${fixedField}
+  z-index: 1000;
   bottom: 0;
 `

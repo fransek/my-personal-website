@@ -1,4 +1,5 @@
 import '@fontsource/anek-devanagari/300.css'
+import 'animate.css/animate.min.css'
 
 import { GlobalStyle } from 'style/global.styles'
 import React from 'react'

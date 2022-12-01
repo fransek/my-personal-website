@@ -24,7 +24,7 @@ export const NavLink = ({
   const [active, setActive] = useState<boolean>(false)
 
   const scrollTo = (ref: React.RefObject<HTMLDivElement>) => {
-    ref.current !== null && ref.current.scrollIntoView({ behavior: 'smooth' })
+    ref.current !== null && ref.current.scrollIntoView()
   }
 
   useEffect(() => {

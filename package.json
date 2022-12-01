@@ -17,10 +17,12 @@
   },
   "dependencies": {
     "@fontsource/anek-devanagari": "^4.5.4",
+    "animate.css": "^4.1.1",
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^5.0.0",
     "gatsby-plugin-styled-components": "^6.0.0",
     "react": "^18.2.0",
+    "react-animation-on-scroll": "^5.1.0",
     "react-dom": "^18.2.0",
     "react-social-icons": "^5.15.0",
     "styled-components": "^5.3.6"
