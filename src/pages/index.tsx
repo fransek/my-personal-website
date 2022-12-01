@@ -2,14 +2,14 @@ import * as React from 'react'
 
 import type { HeadFC, PageProps } from 'gatsby'
 
-import { AboutMe } from 'components/sections/AboutMe/AboutMe'
-import { Contact } from 'components/sections/Contact/Contact'
-import { Education } from 'components/sections/Education/Education'
-import { Footer } from 'components/Footer/Footer'
-import Layout from 'components/Layout/Layout'
+import { AboutMe } from 'modules/sections/AboutMe/AboutMe'
+import { AppFooter } from 'modules/AppFooter/AppFooter'
+import { Contact } from 'modules/sections/Contact/Contact'
+import { Education } from 'modules/sections/Education/Education'
+import Layout from 'modules/Layout/Layout'
 import { Nav } from 'components/Nav/Nav'
-import { Projects } from 'components/sections/Projects/Projects'
-import { Work } from 'components/sections/Work/Work'
+import { Projects } from 'modules/sections/Projects/Projects'
+import { Work } from 'modules/sections/Work/Work'
 import { useRef } from 'react'
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -35,7 +35,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Education innerRef={educationRef} />
       <Projects innerRef={projectsRef} />
       <Contact innerRef={contactRef} />
-      <Footer />
+      <AppFooter />
     </Layout>
   )
 }
