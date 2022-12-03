@@ -1,5 +1,5 @@
 export const EducationText = {
   content: `
-  # Education
+  # Education 🏫
   `,
 }

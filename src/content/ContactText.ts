@@ -1,5 +1,5 @@
 export const ContactText = {
   content: `
-  # Get in touch
+  # Get in touch 📫
   `,
 }
