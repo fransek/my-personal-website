@@ -1,16 +1,16 @@
 import * as React from 'react'
 
-import { ContactText } from 'content/ContactText'
+import { AboutText } from 'content/AboutText'
 import { IComponentProps } from 'components/component'
 import { MD } from 'components/MD/MD'
 import { Section } from 'components/Section/Section'
 
-interface IContactProps extends IComponentProps {}
+interface IAboutProps extends IComponentProps {}
 
-export const Contact = ({ className, id, innerRef }: IContactProps) => {
+export const About = ({ className, id, innerRef }: IAboutProps) => {
   return (
     <Section className={className} id={id} innerRef={innerRef}>
-      <MD>{ContactText.content}</MD>
+      <MD>{AboutText.content}</MD>
     </Section>
   )
 }

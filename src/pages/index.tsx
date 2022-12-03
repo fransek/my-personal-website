@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import type { HeadFC, PageProps } from 'gatsby'
 
-import { AboutMe } from 'modules/sections/AboutMe/AboutMe'
+import { About } from 'modules/sections/About/About'
 import { AppFooter } from 'modules/AppFooter/AppFooter'
 import { Contact } from 'modules/sections/Contact/Contact'
 import { Education } from 'modules/sections/Education/Education'
@@ -23,14 +23,14 @@ const IndexPage: React.FC<PageProps> = () => {
     <Layout>
       <Nav
         links={[
-          { title: 'About me', sectionRef: aboutMeRef },
+          { title: 'About', sectionRef: aboutMeRef },
           { title: 'Work', sectionRef: workRef },
           { title: 'Education', sectionRef: educationRef },
           { title: 'Projects', sectionRef: projectsRef },
           { title: 'Contact', sectionRef: contactRef },
         ]}
       />
-      <AboutMe innerRef={aboutMeRef} />
+      <About innerRef={aboutMeRef} />
       <Work innerRef={workRef} />
       <Education innerRef={educationRef} />
       <Projects innerRef={projectsRef} />

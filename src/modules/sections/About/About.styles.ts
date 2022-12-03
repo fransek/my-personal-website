@@ -1,4 +1,4 @@
 import { ComponentWrapper } from '../../../components/ComponentWrapper/ComponentWrapper'
 import styled from 'styled-components'
 
-export const _AboutMe = styled(ComponentWrapper)``
+export const _About = styled(ComponentWrapper)``
