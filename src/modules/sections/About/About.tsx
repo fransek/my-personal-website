@@ -7,11 +7,23 @@ import { IComponentProps } from 'components/component'
 import { MD } from 'components/MD/MD'
 import { Section } from 'components/Section/Section'
 
-interface IAboutProps extends IComponentProps {}
+interface IAboutProps extends IComponentProps {
+  nextSectionRef: React.RefObject<HTMLDivElement>
+}
 
-export const About = ({ className, id, innerRef }: IAboutProps) => {
+export const About = ({
+  className,
+  id,
+  innerRef,
+  nextSectionRef,
+}: IAboutProps) => {
   return (
-    <Section className={className} id={id} innerRef={innerRef}>
+    <Section
+      className={className}
+      id={id}
+      innerRef={innerRef}
+      nextSectionRef={nextSectionRef}
+    >
       <MD>{AboutContent.text.title}</MD>
       <_About_Body>
         <_About_Text>

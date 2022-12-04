@@ -19,8 +19,8 @@ export const _About_Text = styled.div`
 
 export const _About_Img = styled.div`
   width: 50%;
-  margin: auto;
-  max-width: 20rem;
+  margin: 0 auto;
+  max-width: 16rem;
   @media (min-width: ${media.tablet}) {
     width: auto;
   }

@@ -30,10 +30,10 @@ const IndexPage: React.FC<PageProps> = () => {
           { title: 'Contact', sectionRef: contactRef },
         ]}
       />
-      <About innerRef={aboutMeRef} />
-      <Work innerRef={workRef} />
-      <Education innerRef={educationRef} />
-      <Projects innerRef={projectsRef} />
+      <About innerRef={aboutMeRef} nextSectionRef={workRef} />
+      <Work innerRef={workRef} nextSectionRef={educationRef} />
+      <Education innerRef={educationRef} nextSectionRef={projectsRef} />
+      <Projects innerRef={projectsRef} nextSectionRef={contactRef} />
       <Contact innerRef={contactRef} />
       <AppFooter />
     </Layout>

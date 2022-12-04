@@ -13,3 +13,11 @@ export const _Section = styled(ComponentWrapper)`
 `
 
 export const _Section_Title = styled.h2``
+
+export const _Section_Next = styled.div`
+  margin: 2rem auto;
+  width: min-content;
+  &:hover {
+    cursor: pointer;
+  }
+`
