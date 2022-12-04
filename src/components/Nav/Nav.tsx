@@ -12,8 +12,8 @@ interface INavProps extends IComponentProps {
 export const Nav = ({ className, id, innerRef, links }: INavProps) => {
   return (
     <_Nav className={className} id={id} innerRef={innerRef}>
-      {links.map((link) => (
-        <NavLink title={link.title} sectionRef={link.sectionRef} />
+      {links.map((link, index) => (
+        <NavLink title={link.title} sectionRef={link.sectionRef} key={index} />
       ))}
     </_Nav>
   )

@@ -14,6 +14,12 @@ export const flexRow = css`
   display: flex;
   flex-direction: row;
 `
+
+export const flexCol = css`
+  display: flex;
+  flex-direction: column;
+`
+
 export const fixedField = css`
   position: fixed;
   right: 0;
