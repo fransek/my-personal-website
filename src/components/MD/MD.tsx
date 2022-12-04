@@ -2,6 +2,7 @@ import { NormalComponents } from 'react-markdown/lib/complex-types'
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import { SpecialComponents } from 'react-markdown/lib/ast-to-react'
+import styled from 'styled-components'
 
 interface IMDProps {
   children: string

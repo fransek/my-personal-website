@@ -1,9 +1,23 @@
 const title = `
   # My work history. 💼
 
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa tenetur odio officia natus, laboriosam magnam labore illo minus, minima soluta eius maxime voluptatibus magni laudantium adipisci nostrum ex inventore sed quidem quisquam omnis molestiae dolor? Repellat qui, enim accusantium nihil dolor nam soluta aperiam officia nemo atque facere modi molestias necessitatibus quaerat magnam in recusandae itaque sapiente natus incidunt corrupti rerum mollitia. Provident error laudantium quis illum voluptatibus fugiat! Sit quae aliquam necessitatibus delectus illum odio officia quo culpa veniam mollitia, vitae perferendis totam ratione quam labore eligendi, earum repellat, quasi iste debitis deserunt magni magnam. Doloremque aspernatur praesentium totam.
+  ### Nexer Tech Talent - _IT Consultant_
+
+  AUG 2022 - PRESENT
+
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quaerat totam incidunt aspernatur, tempora voluptatum fuga eos dolores iste similique voluptas sequi provident. Expedita, consequatur placeat. Quo debitis aliquam velit. Ipsam cupiditate accusamus aut? Pariatur exercitationem nihil asperiores velit eligendi.
   
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa tenetur odio officia natus, laboriosam magnam labore illo minus, minima soluta eius maxime voluptatibus magni laudantium adipisci nostrum ex inventore sed quidem quisquam omnis molestiae dolor? Repellat qui, enim accusantium nihil dolor nam soluta aperiam officia nemo atque facere modi molestias necessitatibus quaerat magnam in recusandae itaque sapiente natus incidunt corrupti rerum mollitia. Provident error laudantium quis illum voluptatibus fugiat! Sit quae aliquam necessitatibus delectus illum odio officia quo culpa veniam mollitia, vitae perferendis totam ratione quam labore eligendi, earum repellat, quasi iste debitis deserunt magni magnam. Doloremque aspernatur praesentium totam.
+  ### Nexer Tech Talent - _IT Consultant_
+
+  AUG 2022 - PRESENT
+
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quaerat totam incidunt aspernatur, tempora voluptatum fuga eos dolores iste similique voluptas sequi provident. Expedita, consequatur placeat. Quo debitis aliquam velit. Ipsam cupiditate accusamus aut? Pariatur exercitationem nihil asperiores velit eligendi.
+  
+  ### Nexer Tech Talent - _IT Consultant_
+
+  AUG 2022 - PRESENT
+
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quaerat totam incidunt aspernatur, tempora voluptatum fuga eos dolores iste similique voluptas sequi provident. Expedita, consequatur placeat. Quo debitis aliquam velit. Ipsam cupiditate accusamus aut? Pariatur exercitationem nihil asperiores velit eligendi.
 `
 
 export const WorkContent = {
