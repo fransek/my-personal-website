@@ -1,7 +1,8 @@
 import React from 'react'
+import { _DownArrow } from './DownArrow.styles'
 
 export const DownArrow = ({ onClick }: { onClick?: () => void }) => (
-  <svg
+  <_DownArrow
     width='40px'
     height='40px'
     viewBox='0 -6 524 524'
@@ -11,5 +12,5 @@ export const DownArrow = ({ onClick }: { onClick?: () => void }) => (
   >
     <title>down</title>
     <path d='M64 191L98 157 262 320 426 157 460 191 262 387 64 191Z' />
-  </svg>
+  </_DownArrow>
 )

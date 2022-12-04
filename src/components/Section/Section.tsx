@@ -3,7 +3,7 @@ import * as React from 'react'
 import { _Section, _Section_Next, _Section_Title } from './Section.styles'
 
 import { AnimationOnScroll } from 'react-animation-on-scroll'
-import { DownArrow } from 'svg/DownArrow'
+import { DownArrow } from 'components/DownArrow/DownArrow'
 import { IComponentProps } from 'components/component'
 
 interface ISectionProps extends IComponentProps {
