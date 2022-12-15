@@ -1,3 +1,4 @@
+import { Theme } from './theme.styles'
 import { css } from 'styled-components'
 
 export const media = {
@@ -27,6 +28,6 @@ export const fixedField = css`
   justify-content: center;
   align-items: center;
   height: 3rem;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: ${(props: Theme) => props.theme.bg.darkTransparent};
   backdrop-filter: blur(5px);
 `
