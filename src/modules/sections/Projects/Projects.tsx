@@ -1,5 +1,7 @@
 import * as React from 'react'
 
+import { Card } from 'components/Card/Card'
+import { Grid } from 'components/Grid/Grid'
 import { IComponentProps } from 'components/component'
 import { MD } from 'components/MD/MD'
 import { ProjectsContent } from 'content/ProjectsContent'
@@ -23,6 +25,20 @@ export const Projects = ({
       nextSectionRef={nextSectionRef}
     >
       <MD>{ProjectsContent.text.title}</MD>
+      <Grid>
+        <Card>
+          <MD>{ProjectsContent.text.cards.project}</MD>
+        </Card>
+        <Card>
+          <MD>{ProjectsContent.text.cards.project}</MD>
+        </Card>
+        <Card>
+          <MD>{ProjectsContent.text.cards.project}</MD>
+        </Card>
+        <Card>
+          <MD>{ProjectsContent.text.cards.project}</MD>
+        </Card>
+      </Grid>
     </Section>
   )
 }
