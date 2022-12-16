@@ -6,6 +6,7 @@ import { AboutContent } from 'content/AboutContent'
 import { IComponentProps } from 'components/component'
 import { MD } from 'components/MD/MD'
 import { Section } from 'components/Section/Section'
+import { Socials } from './components/Socials/Socials'
 
 interface IAboutProps extends IComponentProps {
   nextSectionRef: React.RefObject<HTMLDivElement>
@@ -28,6 +29,7 @@ export const About = ({
       <_About_Body>
         <_About_Text>
           <MD>{AboutContent.text.body}</MD>
+          <Socials />
         </_About_Text>
         <_About_Img>
           <img
