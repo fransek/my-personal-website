@@ -31,3 +31,12 @@ export const fixedField = css`
   background-color: ${(props: Theme) => props.theme.bg.darkTransparent};
   backdrop-filter: blur(5px);
 `
+
+export const clickable = css`
+  filter: drop-shadow(${(props: Theme) => props.theme.textShadow.inactive});
+  transition: filter 0.5s;
+  &:hover {
+    cursor: pointer;
+    filter: drop-shadow(${(props: Theme) => props.theme.textShadow.active});
+  }
+`
