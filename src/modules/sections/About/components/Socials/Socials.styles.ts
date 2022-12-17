@@ -11,5 +11,9 @@ export const _Socials = styled(ComponentWrapper)`
 `
 
 export const _Socials_Link = styled.div`
-  padding: 0 1rem;
+  margin: 1rem;
+
+  @media (min-width: ${media.tablet}) {
+    margin: 1rem 2rem 0 0;
+  }
 `

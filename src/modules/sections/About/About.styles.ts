@@ -28,3 +28,11 @@ export const _About_Img = styled.div`
     width: 100%;
   }
 `
+
+export const _About_Links = styled.div`
+  justify-content: center;
+  display: flex;
+  @media (min-width: ${media.tablet}) {
+    justify-content: flex-start;
+  }
+`

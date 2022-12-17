@@ -19,18 +19,23 @@ const IndexPage: React.FC<PageProps> = () => {
   const projectsRef = useRef<HTMLDivElement>(null)
   const contactRef = useRef<HTMLDivElement>(null)
 
-  const navLinks = [
-    { title: 'About', sectionRef: aboutMeRef },
+  const quickLinks = [
     { title: 'Work', sectionRef: workRef },
     { title: 'Education', sectionRef: educationRef },
     { title: 'Projects', sectionRef: projectsRef },
     { title: 'Contact', sectionRef: contactRef },
   ]
 
+  const navLinks = [{ title: 'About', sectionRef: aboutMeRef }, ...quickLinks]
+
   return (
     <Layout>
       <Nav links={navLinks} />
-      <About innerRef={aboutMeRef} nextSectionRef={workRef} />
+      <About
+        innerRef={aboutMeRef}
+        nextSectionRef={workRef}
+        navLinks={quickLinks}
+      />
       <Work innerRef={workRef} nextSectionRef={educationRef} />
       <Education innerRef={educationRef} nextSectionRef={projectsRef} />
       <Projects innerRef={projectsRef} nextSectionRef={contactRef} />
