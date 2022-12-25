@@ -1,5 +1,7 @@
+import { clickable, media } from 'style/util.styles'
+
 import { ComponentWrapper } from 'components/ComponentWrapper/ComponentWrapper'
-import { media } from 'style/util.styles'
+import { SocialIcon } from 'react-social-icons'
 import styled from 'styled-components'
 
 export const _Socials = styled(ComponentWrapper)`
@@ -16,4 +18,8 @@ export const _Socials_Link = styled.div`
   @media (min-width: ${media.tablet}) {
     margin: 1rem 2rem 0 0;
   }
+`
+
+export const _SocialIcon = styled(SocialIcon)`
+  ${clickable}
 `

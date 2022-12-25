@@ -10,13 +10,14 @@ interface I_NavLink_Anchor_Props {
 }
 
 export const _NavLink_Anchor = styled.a`
-  &:hover {
-    cursor: pointer;
-  }
-
   transition: text-shadow 0.5s;
   text-shadow: ${({ active }: I_NavLink_Anchor_Props) =>
     active
       ? ({ theme }: Theme) => theme.fg.textShadow.active
       : ({ theme }: Theme) => theme.fg.textShadow.inactive};
+
+  &:hover {
+    text-shadow: ${({ theme }: Theme) => theme.fg.textShadow.hover};
+    cursor: pointer;
+  }
 `

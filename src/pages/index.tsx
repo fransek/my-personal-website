@@ -3,7 +3,6 @@ import * as React from 'react'
 import type { HeadFC, PageProps } from 'gatsby'
 
 import { About } from 'modules/sections/About/About'
-import { AppFooter } from 'modules/AppFooter/AppFooter'
 import { Contact } from 'modules/sections/Contact/Contact'
 import { Education } from 'modules/sections/Education/Education'
 import Layout from 'modules/Layout/Layout'
@@ -40,7 +39,6 @@ const IndexPage: React.FC<PageProps> = () => {
       <Education innerRef={educationRef} nextSectionRef={projectsRef} />
       <Projects innerRef={projectsRef} nextSectionRef={contactRef} />
       <Contact innerRef={contactRef} />
-      <AppFooter />
     </Layout>
   )
 }
