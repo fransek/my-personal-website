@@ -45,7 +45,11 @@ export const About = ({
           <_HR />
           <_About_Links>
             {navLinks.map((link) => (
-              <QuickLink sectionRef={link.sectionRef} title={link.title} />
+              <QuickLink
+                sectionRef={link.sectionRef}
+                title={link.title}
+                key={link.title}
+              />
             ))}
           </_About_Links>
           <_HR />

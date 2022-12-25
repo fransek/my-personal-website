@@ -3,7 +3,7 @@ import * as React from 'react'
 import { _Section, _Section_Next, _Section_Title } from './Section.styles'
 
 import { AnimationOnScroll } from 'react-animation-on-scroll'
-import { DownArrow } from 'components/DownArrow/DownArrow'
+import { Caret } from 'components/Caret/Caret'
 import { IComponentProps } from 'components/component'
 
 interface ISectionProps extends IComponentProps {
@@ -24,7 +24,7 @@ export const Section = ({
         {children}
         {nextSectionRef && (
           <_Section_Next>
-            <DownArrow
+            <Caret
               onClick={() =>
                 nextSectionRef.current?.scrollIntoView({ behavior: 'smooth' })
               }
