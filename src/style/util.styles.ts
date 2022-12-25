@@ -28,15 +28,15 @@ export const fixedField = css`
   justify-content: center;
   align-items: center;
   height: 3rem;
-  background-color: ${(props: Theme) => props.theme.bg.darkTransparent};
+  background-color: ${({ theme }: Theme) => theme.bg.darkTransparent};
   backdrop-filter: blur(5px);
 `
 
 export const clickable = css`
-  filter: drop-shadow(${(props: Theme) => props.theme.textShadow.inactive});
+  filter: drop-shadow(${({ theme }: Theme) => theme.fg.textShadow.inactive});
   transition: filter 0.5s;
   &:hover {
     cursor: pointer;
-    filter: drop-shadow(${(props: Theme) => props.theme.textShadow.active});
+    filter: drop-shadow(${({ theme }: Theme) => theme.fg.textShadow.active});
   }
 `

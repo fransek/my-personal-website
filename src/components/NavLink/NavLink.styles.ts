@@ -17,6 +17,6 @@ export const _NavLink_Anchor = styled.a`
   transition: text-shadow 0.5s;
   text-shadow: ${({ active }: I_NavLink_Anchor_Props) =>
     active
-      ? (props: Theme) => props.theme.textShadow.active
-      : (props: Theme) => props.theme.textShadow.inactive};
+      ? ({ theme }: Theme) => theme.fg.textShadow.active
+      : ({ theme }: Theme) => theme.fg.textShadow.inactive};
 `

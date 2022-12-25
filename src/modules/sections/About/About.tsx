@@ -14,7 +14,7 @@ import { NavLink } from 'components/NavLink/NavLink'
 import { QuickLink } from '../../../components/QuickLink/QuickLink'
 import { Section } from 'components/Section/Section'
 import { Socials } from './components/Socials/Socials'
-import { _Hr } from '../../../style/components.styles'
+import { _HR } from '../../../style/components.styles'
 
 interface IAboutProps extends IComponentProps {
   nextSectionRef: React.RefObject<HTMLDivElement>
@@ -42,13 +42,13 @@ export const About = ({
       <_About_Body>
         <_About_Text>
           <MD>{AboutContent.text.body}</MD>
-          <_Hr />
+          <_HR />
           <_About_Links>
             {navLinks.map((link) => (
               <QuickLink sectionRef={link.sectionRef} title={link.title} />
             ))}
           </_About_Links>
-          <_Hr />
+          <_HR />
           <Socials />
         </_About_Text>
         <_About_Img>
