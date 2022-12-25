@@ -1,4 +1,5 @@
-import { Theme } from './theme.styles'
+import { Theme, theme } from './theme.styles'
+
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
@@ -8,9 +9,8 @@ export const GlobalStyle = createGlobalStyle`
   
   body {
       min-height: 100vh;
-      background-image: linear-gradient(to right, ${(props: Theme) =>
-        props.theme.bg.gradient_1}, ${(props: Theme) =>
-  props.theme.bg.gradient_2});
+      background-image: linear-gradient(to right, ${({ theme }: Theme) =>
+        theme.bg.gradient});
       color: white;
       margin: 0;
       padding: 0;
