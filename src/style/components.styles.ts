@@ -1,6 +1,9 @@
-import { Theme } from './theme.styles'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-export const _HR = styled.hr`
-  border: 1px solid ${({ theme }: Theme) => theme.fg.hr};
-`
+import { Theme } from './theme.styles'
+
+export const _HR = styled.hr(
+  ({ theme }: Theme) => css`
+    border: 1px solid ${theme.colors.border.primary};
+  `
+)

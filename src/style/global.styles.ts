@@ -1,18 +1,24 @@
+import { createGlobalStyle, css } from 'styled-components'
+
 import { Theme } from './theme.styles'
-import { createGlobalStyle } from 'styled-components'
 
-export const GlobalStyle = createGlobalStyle`
-  * {
-    box-sizing: border-box;
-  }
+export const GlobalStyle = createGlobalStyle(
+  ({ theme }: Theme) => css`
+    * {
+      box-sizing: border-box;
+    }
 
-  body {
+    body {
       min-height: 100vh;
-      background-image: linear-gradient(to right, ${({ theme }: Theme) =>
-        theme.bg.gradient});
-      color: ${({ theme }: Theme) => theme.fg.text};
+      background-image: linear-gradient(
+        to right,
+        ${theme.colors.bg.gradient_1},
+        ${theme.colors.bg.gradient_2}
+      );
+      color: ${theme.colors.text.primary};
       margin: 0;
       padding: 0;
-      font-family: "Anek Devanagari", sans-serif;
-  }
-`
+      font-family: 'Anek Devanagari', sans-serif;
+    }
+  `
+)

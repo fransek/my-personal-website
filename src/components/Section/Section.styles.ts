@@ -1,16 +1,20 @@
+import styled, { css } from 'styled-components'
+
 import { ComponentWrapper } from 'components/ComponentWrapper/ComponentWrapper'
+import { Theme } from 'style/theme.styles'
 import { media } from 'style/util.styles'
-import styled from 'styled-components'
 
-export const _Section = styled(ComponentWrapper)`
-  padding: 1rem;
-  padding-top: 3rem;
-  min-height: 100vh;
+export const _Section = styled(ComponentWrapper)(
+  ({ theme }: Theme) => css`
+    padding: 1rem;
+    padding-top: 3rem;
+    min-height: 100vh;
 
-  @media (min-width: ${media.tablet}) {
-    padding-top: 5rem;
-  }
-`
+    ${theme.media.from.tablet} {
+      padding-top: 5rem;
+    }
+  `
+)
 
 export const _Section_Title = styled.h2``
 
