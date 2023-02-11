@@ -6,8 +6,8 @@ import { clickable } from './../../style/util.styles'
 
 export const _QuickLink = styled(ComponentWrapper)``
 
-export const _QuickLink_Anchor = styled.a(
-  ({ theme }: Theme) => css`
+export const _QuickLink_Anchor = styled.a(({ theme }: Theme) => {
+  return css`
     ${clickable}
 
     margin: 0 1rem;
@@ -17,4 +17,4 @@ export const _QuickLink_Anchor = styled.a(
       margin: 0 2rem 0 0;
     }
   `
-)
+})

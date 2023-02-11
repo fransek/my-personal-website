@@ -2,8 +2,8 @@ import { createGlobalStyle, css } from 'styled-components'
 
 import { Theme } from './theme.styles'
 
-export const GlobalStyle = createGlobalStyle(
-  ({ theme }: Theme) => css`
+export const GlobalStyle = createGlobalStyle(({ theme }: Theme) => {
+  return css`
     * {
       box-sizing: border-box;
     }
@@ -21,4 +21,4 @@ export const GlobalStyle = createGlobalStyle(
       font-family: 'Anek Devanagari', sans-serif;
     }
   `
-)
+})
