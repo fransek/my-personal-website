@@ -11,19 +11,6 @@ export const flexCol = css`
   flex-direction: column;
 `
 
-export const fixedField = ({ theme }: Theme) => {
-  return css`
-    position: fixed;
-    right: 0;
-    left: 0;
-    justify-content: center;
-    align-items: center;
-    height: 3rem;
-    background-color: ${theme.colors.bg.transparent};
-    backdrop-filter: blur(5px);
-  `
-}
-
 export const clickable = ({ theme }: Theme) => {
   return css`
     filter: drop-shadow(${theme.shadows.inactive});

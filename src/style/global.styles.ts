@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle(({ theme }: Theme) => {
 
     body {
       min-height: 100vh;
-      background-image: linear-gradient(
+      background: linear-gradient(
         to right,
         ${theme.colors.bg.gradient_1},
         ${theme.colors.bg.gradient_2}

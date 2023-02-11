@@ -8,7 +8,7 @@ const media = {
   four_k: 2560,
 }
 
-export const theme = {
+export const defaultTheme = {
   colors: {
     bg: {
       gradient_1: 'hsl(259, 39%, 42%)',
@@ -58,14 +58,14 @@ export const theme = {
   },
 }
 
-export type Theme = { theme: typeof theme }
+export type Theme = { theme: typeof defaultTheme }
 
-export const darkTheme: typeof theme = {
+export const darkTheme: typeof defaultTheme = {
   colors: {
     bg: {
       gradient_1: 'hsl(222, 14%, 10%)',
       gradient_2: 'hsl(222, 15%, 10%)',
-      transparent: 'hsla(0, 0%, 0%, 0.1)',
+      transparent: 'hsla(0, 0%, 100%, 0.03)',
     },
     text: {
       primary: 'hsl(0, 0%, 90%)',
@@ -76,8 +76,8 @@ export const darkTheme: typeof theme = {
   },
   shadows: {
     inactive: '0 0 5px hsl(0, 0%, 10%)',
-    active: '0 0 10px hsl(190, 100%, 60%)',
-    hover: '0 0 5px hsl(190, 100%, 60%)',
+    active: '0 0 10px hsl(255, 100%, 70%)',
+    hover: '0 0 5px hsl(255, 100%, 70%)',
   },
   media: {
     from: {

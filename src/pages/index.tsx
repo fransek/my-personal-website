@@ -8,6 +8,7 @@ import { Education } from 'modules/sections/Education/Education'
 import Layout from 'modules/Layout/Layout'
 import { Nav } from 'components/Nav/Nav'
 import { Projects } from 'modules/sections/Projects/Projects'
+import { ThemeSwitch } from 'components/ThemeSwitch/ThemeSwitch'
 import { Work } from 'modules/sections/Work/Work'
 import { useRef } from 'react'
 
@@ -39,6 +40,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Education innerRef={educationRef} nextSectionRef={projectsRef} />
       <Projects innerRef={projectsRef} nextSectionRef={contactRef} />
       <Contact innerRef={contactRef} />
+      <ThemeSwitch />
     </Layout>
   )
 }

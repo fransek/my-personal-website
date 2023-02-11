@@ -11,9 +11,10 @@ export const ComponentWrapper = ({
   id,
   innerRef,
   children,
+  onClick,
 }: IComponentWrapperProps) => {
   return (
-    <div className={className} id={id} ref={innerRef}>
+    <div className={className} id={id} ref={innerRef} onClick={onClick}>
       {children}
     </div>
   )
